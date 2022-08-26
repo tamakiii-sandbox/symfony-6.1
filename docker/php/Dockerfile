@@ -11,6 +11,12 @@ RUN amazon-linux-extras install -y epel && \
 RUN yum update -y && \
     yum install -y \
       php81 \
+      php81-php-xml \
+      php81-php-mbstring \
+      php81-php-process \
+      php81-php-intl \
+      php81-php-pdo \
+      php81-php-opcache \
       which \
       less \
       make
