@@ -19,7 +19,8 @@ RUN yum update -y && \
       php81-php-opcache \
       which \
       less \
-      make
+      make \
+      git
 
 RUN alternatives --install /usr/bin/php php /usr/bin/php81 1
 
