@@ -1,0 +1,17 @@
+services:
+  php:
+    volumes:
+      - app:/app
+
+volumes:
+  app:
+
+x-mutagen:
+  sync:
+    defaults:
+      mode: "two-way-resolve"
+      ignore:
+        vcs: false
+    app:
+      alpha: "."
+      beta: "volume://app"
